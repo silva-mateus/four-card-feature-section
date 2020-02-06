@@ -13,7 +13,6 @@
 }
 
 
-
 body {
   display: flex;
   flex-direction: column;
@@ -23,6 +22,7 @@ body {
   font-family: "Poppins", sans-serif;
   font-size: 1rem;
   height: 100vh;
+  overflow: auto;
 }
 
 .header {
@@ -117,7 +117,8 @@ h3 {
 
 .footer {
   position: relative;
-  margin-top: 20px
+  padding: 20px 0;
+  
 }
 
 .footer .attribution p a {
@@ -164,7 +165,7 @@ a:active {
     flex-direction: row;
     justify-content: space-evenly;
     width: 90vw;
-    height: 60vh;
+    height: auto;
   }
 
   .content .card {
@@ -173,4 +174,10 @@ a:active {
     
   }
 
+}
+
+@media (max-height: 600){
+  body {
+    
+  }
 }
