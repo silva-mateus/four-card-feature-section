@@ -79,6 +79,7 @@ h3 {
   border-width: 3px 0 0 0;
   border-radius: 3%;
   box-shadow: 1px 2px 5px rgba(0, 0, 0, 0.2);
+  height: auto;
   width: 70vw;
   padding: 15px;
   margin: 10px 10px;
@@ -117,12 +118,11 @@ h3 {
   position: relative;
   text-align: center;
   padding: 20px 0;
-  
 }
 
-.footer .attribution p a {
+.footer p {
   text-decoration: none;
-  font-size: .8em;
+  font-size: .7em;
   color: $dark-blue;
 }
 a:link {
@@ -152,12 +152,7 @@ a:active {
 
   }
 
-  .content, .header {
-    flex-grow: 1 0 auto;
-  }
-
   .footer {
-    flex-shrink: 0;
     margin: 10px 0;
   }
 
@@ -170,7 +165,7 @@ a:active {
 
   .content .card {
     width: 25vw;
-    height: 25vh;
+    height: 30vh;
   }
 
 }

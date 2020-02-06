@@ -98,6 +98,7 @@ h3 {
   border-radius: 3%;
   -webkit-box-shadow: 1px 2px 5px rgba(0, 0, 0, 0.2);
           box-shadow: 1px 2px 5px rgba(0, 0, 0, 0.2);
+  height: auto;
   width: 70vw;
   padding: 15px;
   margin: 10px 10px;
@@ -150,9 +151,9 @@ h3 {
   padding: 20px 0;
 }
 
-.footer .attribution p a {
+.footer p {
   text-decoration: none;
-  font-size: .8em;
+  font-size: .7em;
   color: #4c4e61;
 }
 
@@ -185,14 +186,7 @@ a:active {
     height: 100vh;
     width: auto;
   }
-  .content, .header {
-    -webkit-box-flex: 1 0 auto;
-        -ms-flex-positive: 1 0 auto;
-            flex-grow: 1 0 auto;
-  }
   .footer {
-    -ms-flex-negative: 0;
-        flex-shrink: 0;
     margin: 10px 0;
   }
   .content {
@@ -208,7 +202,7 @@ a:active {
   }
   .content .card {
     width: 25vw;
-    height: 25vh;
+    height: 30vh;
   }
 }
 /*# sourceMappingURL=styles.css.map */
