@@ -1,35 +1,40 @@
 @import url("https://fonts.googleapis.com/css?family=Poppins:200,400,600&display=swap");
 
+
+
 :root {
   --dark-blue: hsl(234, 12%, 34%);
   --gray: hsl(229, 6%, 66%);
 }
 
+* {
+  padding: 0;
+  margin: 0;
+}
+
+
+
 body {
   display: flex;
   flex-direction: column;
-  justify-content: space-around;
   align-items: center;
   margin: 0;
   padding: 0;
   font-family: "Poppins", sans-serif;
-  font-size: 15px;
+  font-size: 1rem;
+  height: 100vh;
 }
+
 .header {
   display: flex;
   flex-direction: column;
-  align-content: space-between;
+  justify-content: center;
+  max-width: 80vw;
   text-align: center;
   padding-bottom: 1rem;
-  margin: 20px auto 0;
-  max-height: 30vh;
+  margin: 20px 10px 0;
 }
 
-.header h1,
-h2,
-h3 {
-  margin: 0;
-}
 .header h1 {
   font-weight: 600;
   font-size: 1.45em;
@@ -53,41 +58,48 @@ h3 {
 
 .content {
   display: flex;
-  width: 70vw;
-  justify-content: space-between;
+  flex-direction: column;
+  width: 80vw;
+  height: auto;
   align-items: center;
   padding: 10px;
 }
 
 .content h4 {
   color: var(--dark-blue);
-  margin: 10px 0 0 0;
+  padding: 10px 0;
 }
 
 .content p {
   color: var(--gray);
   font-size: 0.8em;
+  padding-bottom: 80px;
 }
 
 .card {
   position: relative;
   border-style: solid;
   border-width: 3px 0 0 0;
-
   border-radius: 3%;
   box-shadow: 1px 2px 5px rgba(0, 0, 0, 0.2);
-  height: 150px;
-  width: 260px;
-  padding: 10px;
+  width: 70vw;
+  padding: 15px;
   margin: 10px 10px;
 }
 
 .content .card img {
   position: absolute;
-  right: 10px;
-  bottom: 10px;
+  right: 15px;
+  bottom: 15px;
   width: 60px;
   height: auto;
+}
+
+.content .content-middle {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
 }
 
 .content .card1 {
@@ -101,6 +113,11 @@ h3 {
 }
 .content .card4 {
   border-color: hsl(212, 86%, 64%);
+}
+
+.footer {
+  position: relative;
+  margin-top: 20px
 }
 
 .footer .attribution p a {
@@ -123,4 +140,38 @@ a:hover {
 
 a:active {
   text-decoration: underline;
+}
+
+@media (min-width: 800px) {
+  body {
+    display: flex;
+    justify-content: space-between;
+    height: 100vh;
+    width: auto;
+
+  }
+
+  .content, .header {
+    flex-grow: 1 0 auto;
+  }
+
+  .footer {
+    flex-shrink: 0;
+    margin: 10px 0;
+  }
+
+  .content {
+    flex-direction: row;
+    justify-content: space-evenly;
+    width: 90vw;
+    height: 60vh;
+  }
+
+  .content .card {
+    width: auto;
+    max-width: 25vw;
+    max-height: 20vh;
+    
+  }
+
 }
