@@ -2,6 +2,8 @@
 * {
   padding: 0;
   margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 }
 
 body {
@@ -144,6 +146,7 @@ h3 {
 
 .footer {
   position: relative;
+  text-align: center;
   padding: 20px 0;
 }
 
