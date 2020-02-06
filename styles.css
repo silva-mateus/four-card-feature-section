@@ -59,6 +59,7 @@ h3 {
 
 .content {
   display: flex;
+  position: relative;
   flex-direction: column;
   width: 80vw;
   height: auto;
