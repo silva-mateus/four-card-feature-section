@@ -169,15 +169,8 @@ a:active {
   }
 
   .content .card {
-    width: auto;
-    max-width: 25vw;
-    
+    width: 25vw;
+    height: 25vh;
   }
 
-}
-
-@media (max-height: 600){
-  body {
-    
-  }
 }
