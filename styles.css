@@ -59,7 +59,7 @@ h3 {
 
 .content {
   display: flex;
-  flex-wrap: wrap;
+  flex-wrap: nowrap;
   position: relative;
   flex-direction: column;
   width: 80vw;
